@@ -1,0 +1,237 @@
+
+.socialr{
+    padding: 10px 0;
+    background-color: #FBC901;
+    font-family: 'Barlow', sans-serif !important;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+    letter-spacing: 0.5px;
+height: auto;
+
+}
+.visible-lg{
+    display: block ;
+}
+.header h4{
+    font-size:18px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header{
+    padding: 20px 10px 5px 10px;
+    font-family: 'Barlow', sans-serif !important;
+}
+.header a{
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.socialr span a{
+    color:#000;
+    text-decoration: none;
+}
+.socialr ul{
+    display: flex;
+    padding-left:0;
+}
+.socialr ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .fade-in-out {
+    animation: fade 2s infinite;
+  }
+
+  .bg-black{
+    background-color: #000;
+    width: 100%;
+  }
+  .navbar
+    {
+      font-family: 'Lato', sans-serif;
+      margin-right: 50px;
+      background-color: #3A3A3B;
+      width: 100%;
+      height: auto;
+      display: flex;
+      position:sticky;
+      justify-content: center;
+      border-bottom: #036099 4px solid;
+      padding-top: 0.5rem;
+      padding-bottom: 0rem;
+      top: 0;
+    }
+    .navbar ul{
+        display: flex;
+    }
+  .navbar ul li
+  {
+      list-style: none;
+      font-weight: 600;
+  }
+  .whatsapp{
+    background-color: #036099;
+    padding: 10px 20px;
+    font-family: 'Barlow', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 900;
+  }
+  .navbar ul
+  {
+      display: flex;
+      text-decoration: none;
+  
+  
+  }
+  .navbar ul li
+{
+    padding-right: 30px;
+}
+.sub-menu li a{
+    font-size:13px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.sub-menu li{
+    margin-bottom: 10px;
+}
+.navbar a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+.navbar a:hover{
+    color:#036099
+}
+.sub-menu
+{
+
+    color: #000 !important;
+    margin-top: 5px;
+    margin-left: -10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 15px 5px 15px;
+    border-top: #036099 4px solid;
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    z-index: 9999;
+
+}
+.navbar ul li:hover > ul.sub-menu
+{
+    display: block !important;
+    opacity: 1;
+}
+
+@keyframes dropdownAnimation
+{
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sub-menu
+{
+    animation: dropdownAnimation 0.5s ease;
+}
+
+
+.sub-menu li a
+{
+    color: #000;
+}
+.sub-menu li{
+    margin-left:0px;
+    transition: all .5s ease;
+}
+.sub-menu li:hover{
+    margin-left:5px;
+    transition: all .5s ease;
+    color: #036099;
+}
+.green{
+    background-color: #A4C923;
+    padding: 10px 10px;
+}
+
+.carousel-item {
+    height: auto;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+  }
+  .carousel-caption {
+    bottom: 270px;
+  }
+  
+  .bottom-left h5 {
+    font-size: 56px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-weight: 900;
+  }
+  .img-container {
+    position: relative;
+    text-align: center;
+    
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  @media screen and (max-width:768px) {
+    .socialr{
+    padding: 10px 0;
+        background-color: #FBC901;
+        font-family: 'Barlow', sans-serif !important;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 21px;
+          letter-spacing: 0.5px;
+          height: 70px;
+
+    
+    }
+    .visible-lg{
+        display: none !important;
+    }
+    .pad{
+       line-break: normal;
+    }
+    .bottom-left h5 {
+        font-size: 26px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        font-weight: 900;
+      }
+}
