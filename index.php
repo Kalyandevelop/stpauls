@@ -194,6 +194,94 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
     </div>
 
 
+
+    <div class="container">
+    <a href="https://www.stpaulscoachingcentre.com/health-care-professionals.php" style="color:#036099"><h2 style="text-align:center;font-weight:900;font-family: 'Oswald', sans-serif;">HEALTH CARE PROFESSIONALS</h2></a>
+    
+    <div class="row">
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/nurse.jpg" alt="" class="img-responsive">
+            <h5>NURSES</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/bds.jpg" alt="" class="img-responsive">
+            <h5>BDS</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/mbbs.jpg" alt="" class="img-responsive">
+            <h5>MBBS</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/optometry.jpg" alt="" class="img-responsive">
+            <h5>OPTOMETRIST</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/physiotherapist.jpg" alt="" class="img-responsive">
+            <h5>PHYSIOTHERAPIST</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/microbiologist.jpg" alt="" class="img-responsive">
+            <h5>MICROBIOLOGIST</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/pharmacist.jpg" alt="" class="img-responsive">
+            <h5>PHARMACIST</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+   
+
+    <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/medicalaboratoryteechnician.jpg" alt="" class="img-responsive">
+            <h5>MLT -A MEDICAL LABORATORY TECHNICIAN (MLT)</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+    </div>
+<br>
+  <div class="row">
+    <div class="col-md-3">
+          <div class="box1">
+            <img src="imgs/audiology-and-speech-language-pathology.jpg" alt="" class="img-responsive">
+            <h5>AUDIOLOGY AND SPEECH LANGUAGE PATHOLOGY</h5>
+            <a href="exam-for-nurses.php"><button type="button" class="add-to-cart bluebutn"> <span> View Details</span> </button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+
+<div class="pad_bottom_30"></div>
   
 <?php include('footer.php');?>
 </body>
