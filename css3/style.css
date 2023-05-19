@@ -71,6 +71,7 @@ height: auto;
       padding-top: 0.5rem;
       padding-bottom: 0rem;
       top: 0;
+      z-index: 9999999999;
     }
     .navbar ul{
         display: flex;
@@ -207,6 +208,110 @@ height: auto;
     position: absolute;
     bottom: 8px;
     left: 16px;
+  }
+  .box1{
+    background-color: #F7F7F7;
+    padding: 10px;
+    text-align: center;
+
+  }
+  .pad_bottom_30{
+    padding-bottom:30px;
+  }
+  .box1 img{
+    height:129px;
+    width: 100%;
+  }
+  .slider-container {
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-content{
+ 
+    text-align: center;
+    margin: 15px 0px;
+    
+  }
+
+  
+
+.owl-carousel .item{
+  margin: 3px;
+}
+.owl-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-carousel .item {
+    margin: 3px;
+}
+
+.owl-carousel{
+    margin-bottom:15px;
+}
+
+.tabs {
+  max-width: 100%;
+}
+.tabs-nav{
+  margin: 0 !important;
+}
+.tabs-nav li {
+  float: left;
+  width: 50%;
+list-style:none;
+}
+.tabs-nav li:first-child a {
+  border-right: 0;
+  border-top-left-radius: 6px;
+}
+.tabs-nav li:last-child a {
+  border-top-right-radius: 6px;
+}
+.tabs a {
+  background: #eaeaed;
+  border: 1px solid #cecfd5;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none !important;
+  font-family: 'Oswald', sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Oswald', sans-serif;
+}
+.tabs a:hover {
+  color: #036099;
+}
+.tab-active a {
+  background: #fff;
+  border-bottom-color: transparent;
+  color: #036099;
+  cursor: default;
+}
+.tabs-stage {
+  border: 1px solid #cecfd5;
+  border-radius: 0 0 6px 6px;
+  border-top: 0;
+  clear: both;
+
+  position: relative;
+  top: -1px;
+}
+.tabs .card{
+  border:none;
+}
+  .item{
+    font-family: 'Barlow', sans-serif !important;
+    font-size: 14px;
+  }
+  .barlow{
+    font-family: 'Barlow', sans-serif !important;
   }
   @media screen and (max-width:768px) {
     .socialr{
