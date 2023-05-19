@@ -88,11 +88,11 @@ fa-angle-right"></i> PSC-OPTOMETRY</a></li>
                 </ul>
             </li>
 
-            <li><a href="#">BATCH TIMES</a></li>
-            <li><a href="#">ACHIEVEMENTS</a></li>
-            <li><a href="#">REVIEWS</a></li>
+            <li><a href="batch-timing.php">BATCH TIMES</a></li>
+            <li><a href="allachievements.php">ACHIEVEMENTS</a></li>
+            <li><a href="course-reviews.php">REVIEWS</a></li>
             <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a class="green" href="#">START A COURSE</a></li>
+            <li><a href="contact.php">CONTACT</a></li>
+            <li><a class="green" href="contact.php">START A COURSE</a></li>
         </ul>
     </div>

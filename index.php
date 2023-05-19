@@ -300,7 +300,7 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
 
 
     <div class="container">
-    <a href="https://www.stpaulscoachingcentre.com/health-care-professionals.php" style="color:#036099"><h2 style="text-align:center;font-weight:900;font-family: 'Oswald', sans-serif;">HEALTH CARE PROFESSIONALS</h2></a>
+    <a href="health-care-professionals.php" style="color:#036099"><h2 style="text-align:center;font-weight:900;font-family: 'Oswald', sans-serif;">HEALTH CARE PROFESSIONALS</h2></a>
     
     <div class="row">
       <div class="col-md-3">

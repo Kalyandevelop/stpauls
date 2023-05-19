@@ -313,6 +313,22 @@ h1,h2,h3,h4,h5{
   .barlow{
     font-family: 'Barlow', sans-serif !important;
   }
+  #imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .imageItem {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+  
+  #pagination {
+    margin-top: 10px;
+  }
+  
   @media screen and (max-width:768px) {
     .socialr{
     padding: 10px 0;
