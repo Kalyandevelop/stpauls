@@ -22,44 +22,54 @@
 <div class="col-xs-12">
 <ul>
 <li class="home"> <a title="Go to Home Page" href="index.php">Home</a><span>»</span></li>
-<li><strong>Batch Time</strong></li>
+<li><strong>MLT -A Medical Laboratory Technician (MLT)</strong></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<br><br>
+ 
 <div class="container">
+<div class="about-page">
+<div class="col-xs-12 col-sm-12"> 
 
-<h2 class="barlow"><b>Our <span style="color:#DB2205;">Batch Time</span></b></h2>
+<h2 class="barlow"><b>Coaching for <span class="text_color">MLT -A Medical Laboratory Technician (MLT) </span></b></h2>
+<p class="text-justify">
+MLT -A Medical Laboratory Technician (MLT), is a skilled individual trained to carry out low to high complexity laboratory tests and operate laboratory equipment under the supervision of a certified medical laboratory technologist/CLS.
+
+</p>
 <br>
-<h3 class="barlow">9.30 AM - 4.30 PM</h3><br>
 
-<h3 class="barlow">We Offer</h3>
+<center><img src="imgs/medicalaboratoryteechnician.jpg" alt="" class="img-responsive" style="width:30%;" /></center>
 
-
-<ul style="list-style:none;">
-    <li><i class="fa fa-snowflake"></i> Regular and crash courses available.( Regular One Month , Crash courses 6 Days, 10 Days )</li>
-    <li><i class="fa fa-snowflake"></i> Quick Registration & Dataflow within 30 Days.</li>
-    <li><i class="fa fa-snowflake"></i> Weekly mock test as per Exam standards.</li>
-    <li><i class="fa fa-snowflake"></i> Convenient timings ( According to your schedule)</li>
-    <li><i class="fa fa-snowflake"></i> Free study materials</li>
-    <li><i class="fa fa-snowflake"></i> Accomodation and food facility available for ladies.</li>
+<br><br><br><br>
 
 
-</ul>
-
-
-<p class="barlow">Batch Time<br>
-9.30 AM - 4.30 PM</p>
-
-<ul style="list-style:none;">
-<li><i class="fa fa-snowflake"></i> Exam based MCQ questions review in system for students at any convenient time between 9.30 AM - 4.30 PM.</li>
 
 </div>
 
 
 
+</div>
+</div>	
+		
+		
+
+<!-----MAin Container END----------------------------------->
+  
+  <!-- Footer -->  
+    <!--------H1 Tag Start---------------------------------------------------> 
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-xs-12 text-center">
+
+<h1 class="barlow" style="color:#03a84e;font-size:36px; margin-bottom:2%;">Lab Technician Classes - DHA, MOH, PROMETRIC & HAAD Exams</h1>
+
+</div>    
+</div> 
+
+
+</div>
 <div class="pad_bottom_30"></div>
   
 <?php include('footer.php');?>

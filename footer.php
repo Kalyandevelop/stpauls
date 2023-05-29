@@ -1,3 +1,6 @@
+<a href="https://api.whatsapp.com/send?phone=918089085309&amp;text=" class="float22" target="_blank">
+<i class="fa-brands fa-whatsapp my-float22"></i>
+</a>
 <footer>
     <div class="footer-newsletter">
       <div class="container">
@@ -38,7 +41,7 @@
               <p>+91 9447104308</p>	  
 			  
             </div></a>
-		<a href="https://wa.me/918089085309" target="_blank"> <div class="phone"> <i style="background-color:#18c80a; color :#FFF; padding:10px;" class="fa fa-whatsapp"></i>
+		<a href="https://wa.me/918089085309" target="_blank"> <div class="phone"> <i style="background-color:#18c80a; color :#FFF; padding:10px;" class="fa-brands fa-whatsapp"></i>
               <p>+91 8089085309</p>	  
 			  
             </div>	</a>	

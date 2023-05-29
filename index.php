@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <?php include('head.php');?>
+    <title>DHA, MOH, HAAD, Prometric, CBT Exams | St Paul’s Coaching Centre</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
    
     <link rel="stylesheet" href="css3/style.css">
     <link rel="stylesheet" href="css/style.css">
  
-    
+    <style>
+      .close{
+        background: transparent;
+    border: 0;
+      }
+    </style>
 </head>
 <body>
 <?php include('header.php');?>
@@ -214,6 +220,7 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
 
 <div class="row">
   <div class="col-md-6" >
+    <h2 style="color:#036099;font-size:28px;font-weight:900">WHAT OUR STUDENTS SAY !</h2>
     <div style="background-color:#F8F8F8;padding:20px;height:100%">
       <div class="slider-container">
         <div class="slider-content">
@@ -233,7 +240,7 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
 
           while ($data = mysqli_fetch_array($query)) {
             $dbstartvalue= $data['star'];
-            echo '<div class="hider" style="display:none"><p>' . $data['description'] . '</p>';
+            echo '<div class="hider" style="display:none"><p style="color:#036099">' . $data['description'] . '</p>';
             ?>
             <span  style="color:#fb5e78;" ><strong> 
             <?php if($dbstartvalue =='1'){ ?> <img src="star.png"/> 
@@ -242,7 +249,7 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
             <?php } else if($dbstartvalue == '4') { ?> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/>
             <?php } else if($dbstartvalue == '5') { ?> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <?php } ?>
             </strong></span><br>
-            <strong><?php echo $data['name'] ?></strong>
+            <strong>--- <?php echo $data['name'] ?> ---</strong>
             </div>                  
              <?php } ?>  
          
@@ -295,13 +302,13 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
             </div>
            
   </div>
-<br><br>
+<br><br><br><br>
 
 
 
     <div class="container">
     <a href="health-care-professionals.php" style="color:#036099"><h2 style="text-align:center;font-weight:900;font-family: 'Oswald', sans-serif;">HEALTH CARE PROFESSIONALS</h2></a>
-    
+    <br>
     <div class="row">
       <div class="col-md-3">
           <div class="box1">
@@ -384,6 +391,11 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
   </div>
   
   </div>
+
+
+
+
+
 
   
 <div class="pad_bottom_30"></div>
@@ -561,9 +573,99 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
 </div>
 
 
+ 
+ <!-- The Modal -->
+ <div class="modal" id="myModalnew">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title barlow">Post Your Feedback</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form id="frm" class="recaptchaForm" method="post" action="comment-form-submission.php">
+<div class="form-group">
+<label for="email">Name *</label>
+<input  type="text" class="form-control" placeholder="Enter Name" id="email"  name="name" required>
+</div>
+<br>
+<div class="form-group">
+<label for="email">Email </label>
+<input type="email" class="form-control" placeholder="Enter email" id="email" name="email" required>
+</div>
+<br>
+<div class="form-group">
+<label for="email">Description *</label>
+<textarea name="message" id="comm" class="form-control" cols="15" rows="6"  required placeholder="Comment"></textarea>
+</div>
+<br>
+<script type="text/javascript">
+function getValue() {
+  var value = document.querySelector('input[name="star"]:checked').value;
+  console.log(value);
+}
+</script>
+<div class="row">
+<div class="col-md-2">
+<div class="custom-control custom-radio custom-control-inline">
+<input type="radio" class="custom-control-input" id="customRadio" name="star" value="1"  >
+<label class="custom-control-label" for="customRadio">1 <img src="star.png"/> </label>
+</div></div>
+
+
+<div class="col-md-2">
+<div class="custom-control custom-radio custom-control-inline">
+<input type="radio" class="custom-control-input" id="customRadio2" name="star" value="2" >
+<label class="custom-control-label" for="customRadio2">2 <img src="star.png"/> </label>
+</div></div>
+
+
+<div class="col-md-2">
+<div class="custom-control custom-radio custom-control-inline">
+<input type="radio" class="custom-control-input" id="customRadio3" name="star" value="3" >
+<label class="custom-control-label" for="customRadio3">3 <img src="star.png"/> </label>
+</div></div>
+
+<div class="col-md-2">
+<div class="custom-control custom-radio custom-control-inline">
+<input type="radio" class="custom-control-input" id="customRadio4" name="star" value="4" checked>
+<label class="custom-control-label" for="customRadio4">4 <img src="star.png"/>  </label>
+</div></div>
+
+<div class="col-md-2">
+<div class="custom-control custom-radio custom-control-inline">
+<input type="radio" class="custom-control-input" id="customRadio5" name="star" value="5" >
+<label class="custom-control-label" for="customRadio5">5 <img src="star.png"/> </label>
+</div></div>
+
+</div>
+<br>
+<div class="g-recaptcha" data-sitekey="6LcrXeIiAAAAAO3u1nZrTb4NQ-dOhLql72-dt43I"></div><br>
+<br>
+<button id="submit" name="send" type="submit" value="Send" class="btn btn-primary iq-mt-20">Send</button>
+
+</form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+ <!---------Model END------------------------------------->  
+
 <div class="pad_bottom_30"></div>
   
 <?php include('footer.php');?>
+
+
 
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
@@ -573,7 +675,35 @@ St.Pauls offer you a single window solution for Coaching and Dataflow to achieve
 
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script>
+    $(document).ready(function(){
+       $(".recaptchaForm").on('submit',function(event){
+          var recaptcha = $("#g-recaptcha-response").val();
+      var name =  $("input[name=name]").val();
+      var email =  $("input[name=email]").val();
+     var msg = $("#comm").val();
+      var star =  $('input[name="star"]:checked').val();
+          if(recaptcha === ""){
+              event.preventDefault();
+              alert("Please check recaptcha");
+          }else{
+          event.preventDefault();
+          $.post("comment-form-submission.php",{
+              "secret":"6LcrXeIiAAAAABwXM8PPZ3WwNCAbhc8-11Cv_8rr",
+              "response":recaptcha,
+              "name":name,
+              "email":email,
+              "star":star,
+              "message":msg
+      
+                      },function(ajaxResponse){
+              console.log(ajaxResponse);
+           alert(ajaxResponse);
+          });
+       }
+       });
+    });
+</script>
 <script>
   // Show the first tab by default
 $('.tabs-stage #tab-1').hide();

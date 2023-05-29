@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,8 +14,6 @@
     .hidden {
   display: none;
 }
-
-
 
 .pagination-container {
   width: calc(100% - 2rem);
@@ -49,10 +47,7 @@
   background: #0085b6;
 }
 .sect{
-text-align:left;
-margin-bottom:10px;
-border-top: 1px dashed #ccc;
-padding:10px 0;
+text-align:center;
 }
   </style>
     
@@ -81,7 +76,7 @@ if ($conn->connect_error) {
 <div class="col-xs-12">
 <ul>
 <li class="home"> <a title="Go to Home Page" href="index.php">Home</a><span>»</span></li>
-<li><strong>Feedback</strong></li>
+<li><strong>Achievements</strong></li>
 </ul>
 </div>
 </div>
@@ -92,33 +87,26 @@ if ($conn->connect_error) {
     
 <main>
 
-<h2 class="barlow"><b>Our Students <span style="color:#DB2205;">Feedback</span></b></h2><br>
+<h2 class="barlow"><b>Our Students <span style="color:#DB2205;">Achievements</span></b></h2><br>
   <ul id="paginated-list" data-current-page="1" aria-live="polite">
 <div class="row">
   <?php
-// Set the character encoding to UTF-8
-mysqli_set_charset($conn, "utf8");
-  $sql = "SELECT * FROM `comments`  WHERE `status` = 1  order by `id` DESC   ";
+  $sql = "SELECT title, image FROM achievements order by `id` DESC ";
 $result=mysqli_query($conn, $sql);
 
 while ($data = mysqli_fetch_array($result)) {
-    $dbstartvalue = $data['star'];
+
+$image=$data['image'];
+$title=$data['title'];
 
 ?>
-
+<div class="col-md-6 col-xs-6 col-lg-3">
 <div class="sect">
     
-    <p class="barlow"><?php echo $data['description'] ?></p>
-    <span  style="color:#fb5e78;" ><strong> 
-            <?php if($dbstartvalue =='1'){ ?> <img src="star.png"/> 
-            <?php } else if($dbstartvalue =='2'){ ?> <img src="star.png"/> <img src="star.png"/> 
-            <?php } else if($dbstartvalue =='3'){ ?> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> 
-            <?php } else if($dbstartvalue == '4') { ?> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/>
-            <?php } else if($dbstartvalue == '5') { ?> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <img src="star.png"/> <?php } ?>
-            </strong></span>
-            <strong style="color:#FC9989"><?php echo $data['name'] ?></strong>
+    <a href="achievements/<?php echo $image; ?>"><img src="achievements/<?php echo $image; ?>" alt="" class="img-responsive" style="height:300px"></a>
+    <p class="barlow"><?php echo $title;  ?></p>
 </div>
-
+</div>
 
 <?php
 }
